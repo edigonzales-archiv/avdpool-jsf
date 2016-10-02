@@ -1,0 +1,67 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:b="http://bootsfaces.net/ui"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:p="http://primefaces.org/ui">
+	
+<h:body>
+
+	<ui:composition template="/templates/template.xhtml">
+
+		<ui:define name="content">
+			<b:container>				
+				<h:form>
+					<b:dataTable id="deliveriesList" value="#{config.configList}" 
+						var="c" responsive="true" paginated="false"
+						styleClass="table table-striped table-bordered"
+					 	style="width:100%">
+					  <h:column>
+					    <f:facet name="header">
+					      <h:outputText value="Gemeinde" />
+					    </f:facet>
+						<h:outputText value="#{c.modelName}"/>
+					  </h:column>
+					  <h:column>
+					    <f:facet name="header">
+					      <h:outputText value="BfS-Nummer" />
+					    </f:facet>
+					    <h:commandLink href="#" value="Download"
+	                        icon="download" iconAlign="right"
+	                        action="#{config.downloadConfigFile(c.modelName)}"/>
+					  </h:column>
+					  <h:column>
+					    <f:facet name="header">
+					      <h:outputText value="ITF" />
+					    </f:facet>
+						<h:outputText value="#{c.uploadDate}"/>
+					  </h:column>  
+					  <h:column>
+					    <f:facet name="header">
+					      <h:outputText value="Uploaddatum" />
+					    </f:facet>
+						<h:outputText value="#{c.uploadDate}"/>
+					  </h:column>  					  				  
+					</b:dataTable>
+					
+					
+					
+					
+					
+					<b:commandButton value="Gaga" ajax="false"
+								action="#{delivery.dummyTest}" />
+				</h:form>
+				
+				
+				
+				
+				
+				
+			</b:container>
+		</ui:define>
+	</ui:composition>
+
+</h:body>
+</html>

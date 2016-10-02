@@ -1,0 +1,86 @@
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    padding-bottom: 20px;
+    font-family: 'ZurichBT', 'Zurich', 'Open Sans', sans-serif;
+    font-size: 16px;
+    margin-bottom: 60px;
+}
+
+
+.jumbotron {
+    position: relative;
+    background: #fff url("#{resource['img/intro.png']}") center center;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    overflow: hidden;
+    padding: 80px;
+    margin-top: 50px;
+}
+
+.jumbotron h1 {
+    color: #fff;
+    font-weight: 900;
+}
+
+.jumbotron h4 {
+    color: rgb(117, 117, 117);
+    background-color: #fff;
+    padding: 10px;
+    text-transform: uppercase;
+    display: inline-block;
+    box-sizing: border-box;
+}
+
+.jumbotron .container {
+    text-align: center;
+}
+
+.navbar-default .navbar-brand {
+	font-weight: 900;
+	color: #000;
+}
+
+.navbar-default .navbar-nav > li > a {
+	color: #000;
+	font-size: 15px;
+	outline: none;
+}
+
+.navbar-fixed-top {
+	border-bottom-width: 1px;
+}
+
+form {
+    margin: 20px;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+
+  /* Set the fixed height of the footer here */
+  height: 60px;
+  background-color: #fff;
+  font-size: 15px;
+}
+
+.checkbox {
+    margin-left: 15px;
+}
+
+.navbar-ilivalidator {
+	/*opacity: 0.0;*/
+	background-color:rgba(255,255,255,1.0);
+	
+}
+
+.form-signin {
+    margin: 0 auto;
+    max-width: 330px;
+    padding: 15px;
+}

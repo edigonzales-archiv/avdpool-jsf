@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:b="http://bootsfaces.net/ui">
+<head>
+	<title>AVDPOOL</title>
+	<meta name="description" content="--"></meta>
+	<meta name="author" content="Stefan Ziegler"></meta>
+	
+</head>
+<body>
+	<ui:composition>
+		<b:navBar brand="AVDPOOL" brandHref="index.html" styleClass="navbar-ilivalidator" fixed="top">
+			<b:navbarLinks>
+				<b:navLink value="#{msgs.header_upload}" href="index.html"></b:navLink>
+				<b:navLink value="#{msgs.header_show_toml_configurations}" href="showConfig.xhtml"></b:navLink>
+			</b:navbarLinks>
+			<b:navbarLinks pull="right">
+				<b:dropMenu value="#{msgs.header_settings}" iconAwesome="gear"
+					iconAlign="left">
+					<b:navLink value="#{msgs.header_upload_toml_configuration}" href="newConfig.xhtml"></b:navLink>
+					<b:navLink value="#{msgs.header_usage_stats}" href="usage.xhtml"></b:navLink>
+				</b:dropMenu>
+			</b:navbarLinks>			
+		</b:navBar>
+		<b:jumbotron>
+			<b:container>
+				<h1>AVDPOOL</h1>
+				<h4>Datenlieferungen der amtlichen Vermessung.</h4>
+			</b:container>
+		</b:jumbotron>
+		
+	</ui:composition>
+</body>
+</html>
