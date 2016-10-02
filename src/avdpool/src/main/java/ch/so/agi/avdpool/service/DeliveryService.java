@@ -22,7 +22,7 @@ public class DeliveryService {
 	public void getItfList() throws IllegalArgumentException, SocketException, IOException {
 		
 		// get file list from ftp
-		// join with gemeindenamen
+		// join with gemeindenamen (gpkg geotools find by bfs nr)
 		// create links?
 		
 		
